@@ -1,0 +1,16 @@
+---
+- name: "add IIS web feature"
+  win_feature:
+    name: "Web-Server"
+    state: present 
+    restart: yes
+    include_sub_feature: yes
+    include_management_tools: yes
+
+- name: "add additional modules to IIS"
+  win_feature:
+    name: "Web-Log-Libraries,Web-Http-Tracing,Web-Basic-Auth,Web-Windows-Auth,Web-Digest-Auth"
+    state: present
+    restart: yes
+    include_sub_feature: no
+    include_management_tools: yes
