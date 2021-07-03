@@ -18,7 +18,7 @@ resource "azurerm_virtual_network" "rg" {
 }
 
 resource "azurerm_subnet" "rg" {
-  name                 = "internal"
+  name                 = "intergal"
   resource_group_name  = azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.rg.name
   address_prefixes     = ["10.0.2.0/24"]
@@ -30,7 +30,7 @@ resource "azurerm_network_interface" "rg" {
   resource_group_name = azurerm_resource_group.rg.name
 
   ip_configuration {
-    name                          = "internal"
+    name                          = "intergal"
     subnet_id                     = azurerm_subnet.rg.id
     private_ip_address_allocation = "Dynamic"
   }
