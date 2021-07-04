@@ -1,7 +1,7 @@
-maquina    ansible_host=3.238.185.249  ansible_user=Administrator ansible_password=")Nf7.rxwVxD-P%KMc!ovB)q%fX7*Ersa" ansible_port=5986  ansible_connection=winrm  ansible_winrm_server_cert_validation=ignore
+maquina    ansible_host=20.96.117.113  ansible_user=adminuser ansible_password="P@$$w0rd1234!" ansible_port=5986  ansible_connection=winrm  ansible_winrm_server_cert_validation=ignore
 
 [windows]
-ec2-3-238-185-249.compute-1.amazonaws.com
+20.96.117.113
 
 
 [linux]
