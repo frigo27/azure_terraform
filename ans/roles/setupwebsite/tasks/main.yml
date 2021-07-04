@@ -1,6 +1,0 @@
----
-- name: "Create physical folder for IIS"
-  win_file: 
-    path: C:\inetpub\wwwroot\firstaspnetcore
-    state: directory
-
