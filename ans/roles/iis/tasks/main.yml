@@ -1,5 +1,5 @@
 ---
-- name: "add IIS web feature"
+- name: "adcionar IIS web "
   win_feature:
     name: "Web-Server"
     state: present 
@@ -7,7 +7,7 @@
     include_sub_feature: yes
     include_management_tools: yes
 
-- name: "add additional modules to IIS"
+- name: "adcionar modulos para o IIS"
   win_feature:
     name: "Web-Log-Libraries,Web-Http-Tracing,Web-Basic-Auth,Web-Windows-Auth,Web-Digest-Auth"
     state: present

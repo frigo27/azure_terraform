@@ -1,0 +1,6 @@
+---
+- name: "Criar uma pasta para o IIS"
+  win_file: 
+    path: C:\inetpub\wwwroot\firstaspnetcore
+    state: directory
+

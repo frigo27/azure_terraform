@@ -1,5 +1,5 @@
 ---
-- hosts: windows2
+- hosts: maquina
   roles:
     - iis
     - setupwebsite
